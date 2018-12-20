@@ -1,0 +1,24 @@
+<div class="container-fluid registro">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <div class="d-flex justify-content-center">
+        <h3>REGISTRATE!</h3>
+      </div>
+      <div class="d-flex justify-content-center">
+        <input class="campos" type="text" name="nombre" value="" placeholder="*Nombre" [(ngModel)]="campoNombre" />
+      </div>
+      <div class="d-flex justify-content-center">
+        <input class="campos" type="text" name="apellidos" value="" placeholder="*Apellidos" [(ngModel)]="campoApellidos" />
+      </div>
+      <div class="d-flex justify-content-center">
+        <input class="campos" type="password" name="clave" value="" placeholder="*Apellidos" [(ngModel)]="campoClave" />
+      </div>
+      <div class="d-flex justify-content-center">
+        <input class="campos" type="email" name="email" value="" placeholder="*Email" [(ngModel)]="campoEmail" />
+      </div>
+      <div class="d-flex justify-content-center">
+        <button (click)="registrar()" class="btn btn-primary">Registrar</button>
+      </div>
+    </div>
+  </div>
+</div>

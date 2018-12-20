@@ -1,39 +1,13 @@
-<p>
-  {{titulo}}
-  <li *ngFor="let usuario of usuarios">
-    <h4>{{usuario.email}}</h4>
-  </li>
-</p>
-  <div class="Anuncio" *ngFor="let producto of productos">
-    <h4 class="titulo-anuncio">{{producto.titulo}}</h4>
-    <p class="categoria-anuncio">{{producto.categoria}}</p>
-    <p class="categoria-descripcion">{{producto.descripcion}}</p>
-    <h3 class="precio-descripcion">{{producto.precio}}</h3>
-  </div>
+  <section class="container-fluid" style="min-height:85vh">
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+          <filter class="col-3"></filter>
+          <anuncio class="col-3" *ngFor="let producto of productos" [Anuncio]="producto"></anuncio>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
 
-<style>
-  .Anuncio{
-    min-height:30vh;
-    width: 20vw;
-    background-color:rgba(0,0,0,0.5);
-    padding:5em;
-    }
-  .precio-descripcion{
-    text-align:center;
-    color:black;
-  }
-  .titulo-anuncio{
-    text-align:center;
-    color:black;
-    margin:1.5em;
-  }
-  .categoria-anuncio{
-    text-align:center;
-    color:white;
-  }
-  .categoria-descripcion{
-    text-align:center;
-    color:black;
-  }
-</style>

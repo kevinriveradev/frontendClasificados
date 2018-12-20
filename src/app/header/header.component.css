@@ -1,0 +1,11 @@
+header{
+  background-color:rgba(0,0,0,0.5);
+  padding:2vw;
+  margin-bottom:3vh;
+}
+header h1{
+  color:white;
+}
+button{
+  margin:1vw;
+}

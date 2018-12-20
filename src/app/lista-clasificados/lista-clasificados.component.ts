@@ -15,8 +15,8 @@ export class ListaClasificadosComponent implements OnInit {
 
   ngOnInit() {
     this.titulo = "Listado de anuncios";
-    this.anuncios.getUsers().subscribe((res) => this.productos = res);
-    
+      this.anuncios.getUsers().subscribe((res) => this.productos = res);
+      console.log(this.productos);
   }
 
  
